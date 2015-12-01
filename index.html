@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Login - Greenfield Commission Portal</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/angular.js"></script>
+    
+</head>
+<body>
+    <div id="page-wrap">
+        <section>
+            <div class="loginForm" ng-app="postExample" ng-controller="PostController as postCtrl">
+                <form class="login-form" ng-submit="postCtrl.postForm()">
+                    <div class="alert alert-danger" role="alert" ng-show="errorMsg">{{errorMsg}}</div>
+                    <div class="form-group extra-margin-bottom">
+                        <label for="inputUsername" class="sr-only">username</label>
+                        <input type="text" id="inputUsername" class="form-control" placeholder="username" required="required" autofocus ng-model="postCtrl.inputData.username">
+                    </div>
+                    <div class="form-group extra-margin-bottom">
+                        <label for="inputPassword" class="sr-only">password</label>
+                        <input type="text" id="inputPassword" class="form-control" placeholder="password" required="required" ng-model="postCtrl.inputData.password">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Log In</button>
+                </form>
+                <div class="loginFooter">
+                    <a href="http://systemsupport.greenfield.com.ph/portal" target="_blank">request for help / forgot password?</a> <br> <a href="mailto:systems.support@greenfield.com.ph">email : systems.support@greenfield.com.ph</a>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer-main">
+                <h3>Terms of Use</h3>
+                <p><i class="fa fa-copyright"></i> 2015 Greenfield Development Corporation <br> Developed by: <a href="http://www.yondu.com" target="_blank">YONDU</a></p>
+            </div>
+        </footer>
+    </div>
+    <div id="bg">
+		<img src="img/login_background.jpg" alt="">
+	</div>
+    <script src="js/angular_script.js"></script>
+    <script src="js/jquery.js"></script>    
+    <script src="js/bootstrap.js"></script>
+</body>
+</html>

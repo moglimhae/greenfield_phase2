@@ -1,0 +1,1047 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Dashboard - Greenfield Commission Portal</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="page-wrap">
+        <header>
+            <nav class="navbar navbar-default">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="#"><img src="img/logo.png" alt="Greenfield"></a>
+                </div>
+                <div id="navbar" class="collapse navbar-collapse pull-right">
+                  <ul class="nav navbar-nav">
+                    <li class="welcome">Welcome, <strong>User</strong>!</li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Email Template <span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="#">New User Account</a></li>
+                        <li><a href="#">Reset Password</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li><a href="#">User Management</a></li>
+                  </ul>
+                </div><!--/.nav-collapse <-->
+                    <div class="clearfix"></div>
+                </-->
+                <span class="pull-right signout"> <a href="index.html">Sign Out</a> <i class="fa  fa-sign-out"></i></span>
+            </nav>
+        </header>
+        
+        <section>
+            <ol class="breadcrumb">
+              <li class="active">Dashboard</li>
+            </ol>
+        </section>
+        
+        <section>
+        	<div class="container vendor-details pull-left">
+            	<p>Vendor Code: <strong>60000</strong></p>
+                <p>Vendor Name: <strong>Maria Santos</strong></p>
+            </div>
+        </section>
+        
+        <section>
+            <div class="col-md-10 pull-left">
+                <form action="" class="form-vendor form-inline"  role="form">
+                    <div class="form-group form-filter">
+                        <div class="input-group date form_date" data-date="" data-date-format="MM dd yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                            <input class="form-control" type="text" value="" placeholder="From" readonly>
+                            <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                        </div>
+                        <input type="hidden" id="dtp_input2" value="" />
+                    </div>
+                    
+                    <div class="form-group form-filter">
+                        <div class="input-group date form_date" data-date="" data-date-format="MM dd yyyy" data-link-field="dtp_input3" data-link-format="yyyy-mm-dd">
+                            <input class="form-control" type="text" value="" placeholder="To" readonly>
+                            <span class="input-group-addon"><span class="fa fa-calendar"></span></span>
+                        </div>
+                        <input type="hidden" id="dtp_input3" value="" />
+                    </div>
+                    <button type="button" class="btn btn-default">Search</button>
+                </form>
+            </div>
+            <div class="col-md-2 container-icons pull-right">
+                <div class="icons">
+                    <a href="#" title="Export to Excel"><i class="fa fa-file-excel-o"></i></a>
+                    <a href="#" title="Export to PDF"><i class="fa  fa-file-pdf-o"></i></a>
+                    <a href="#" title="Print"><i class="glyphicon glyphicon-print"></i></a>
+                </div>
+            </div>
+        </section>
+        
+        <section>
+            <table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered table-condensed" id="example">
+                <thead>
+                    <tr class="main-theader">
+                      <th colspan="2">Sales Period</th>
+                      <th colspan="3">Sales</th>
+                      <th colspan="3">Total Gross Commission</th>
+                      <th colspan="3">Total Commission Paid</th>
+                      <th colspan="3">Total Commission Due</th>
+                    </tr>
+                    <tr class="sub-theader">
+                        <th>Year</th>
+                        <th>Month</th>
+                        <th>Cancelled with Payments</th>
+                        <th>Good Sales</th>
+                        <th>Total</th>
+                        <th>Cancelled Payments</th>
+                        <th>Good Sales</th>
+                        <th>Total</th>
+                        <th>Cancelled Payments</th>
+                        <th>Good Sales</th>
+                        <th>Total</th>
+                        <th>Cancelled Payments</th>
+                        <th>Good Sales</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="odd gradeX">
+                        <td><a href="commission-details.html">2013</a></td>
+                        <td>January</td>
+                        <td>5,320,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="even gradeC">
+                        <td><a href="commission-details.html">2013</a></td>
+                        <td>January</td>
+                        <td>2,320,422.67</td>
+                        <td class="center">6,464,489.10 </td>
+                        <td class="center">10,785,911.77</td>
+                        <td class="center">10,785,911.77</td>
+                        <td class="center">6,464,489.10 </td>
+                        <td class="center">10,785,911.77</td>
+                        <td class="center">10,785,911.77</td>
+                        <td class="center">6,464,489.10 </td>
+                        <td class="center">10,785,911.77</td>
+                        <td class="center">10,785,911.77</td>
+                        <td class="center">6,464,489.10 </td>
+                        <td class="center">10,785,911.77</td>
+                    </tr>
+                    <tr class="odd gradeA">
+                        <td><a href="commission-details.html">2013</a></td>
+                        <td>January</td>
+                        <td>1,320,422.67</td>
+                        <td class="center">7,464,489.10 </td>
+                        <td class="center">9,786,911.77</td>
+                        <td class="center">9,786,911.77</td>
+                        <td class="center">7,464,489.10 </td>
+                        <td class="center">9,786,911.77</td>
+                        <td class="center">9,786,911.77</td>
+                        <td class="center">7,464,489.10 </td>
+                        <td class="center">9,786,911.77</td>
+                        <td class="center">9,786,911.77</td>
+                        <td class="center">7,464,489.10 </td>
+                        <td class="center">9,786,911.77</td>
+                    </tr>
+                    <tr class="even gradeA">
+                        <td><a href="commission-details.html">2013</a></td>
+                        <td>January</td>
+                        <td class="odd gradeX">4,320,422.67</td>
+                        <td class="center">8,464,489.10 </td>
+                        <td class="center">7,787,911.77</td>
+                        <td class="center">7,787,911.77</td>
+                        <td class="center">8,464,489.10 </td>
+                        <td class="center">7,787,911.77</td>
+                        <td class="center">7,787,911.77</td>
+                        <td class="center">8,464,489.10 </td>
+                        <td class="center">7,787,911.77</td>
+                        <td class="center">7,787,911.77</td>
+                        <td class="center">8,464,489.10 </td>
+                        <td class="center">7,787,911.77</td>
+                    </tr>
+                    <tr class="odd gradeA">
+                        <td><a href="commission-details.html">2013</a></td>
+                        <td>February</td>
+                        <td class="even gradeC">9,320,422.67</td>
+                        <td class="center">9,464,489.10 </td>
+                        <td class="center">6,388,911.77</td>
+                        <td class="center">6,388,911.77</td>
+                        <td class="center">9,464,489.10 </td>
+                        <td class="center">6,388,911.77</td>
+                        <td class="center">6,388,911.77</td>
+                        <td class="center">9,464,489.10 </td>
+                        <td class="center">6,388,911.77</td>
+                        <td class="center">6,388,911.77</td>
+                        <td class="center">9,464,489.10 </td>
+                        <td class="center">6,388,911.77</td>
+                    </tr>
+                    <tr class="even gradeA">
+                        <td><a href="commission-details.html">2013</a></td>
+                        <td>February</td>
+                        <td class="odd gradeA">1,320,422.67</td>
+                        <td class="center">5,164,489.10 </td>
+                        <td class="center">10,389,911.77</td>
+                        <td class="center">10,389,911.77</td>
+                        <td class="center">5,164,489.10 </td>
+                        <td class="center">10,389,911.77</td>
+                        <td class="center">10,389,911.77</td>
+                        <td class="center">5,164,489.10 </td>
+                        <td class="center">10,389,911.77</td>
+                        <td class="center">10,389,911.77</td>
+                        <td class="center">5,164,489.10 </td>
+                        <td class="center">10,389,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                        <td><a href="commission-details.html">2014</a></td>
+                        <td>February</td>
+                        <td class="odd gradeX">6,320,422.67</td>
+                        <td class="center">5,264,489.10 </td>
+                        <td class="center">10,780,911.77</td>
+                        <td class="center">10,780,911.77</td>
+                        <td class="center">5,264,489.10 </td>
+                        <td class="center">10,780,911.77</td>
+                        <td class="center">10,780,911.77</td>
+                        <td class="center">5,264,489.10 </td>
+                        <td class="center">10,780,911.77</td>
+                        <td class="center">10,780,911.77</td>
+                        <td class="center">5,264,489.10 </td>
+                        <td class="center">10,780,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                        <td><a href="commission-details.html">2014</a></td>
+                        <td>February</td>
+                        <td class="even gradeC">8,320,422.67</td>
+                        <td class="center">5,364,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,364,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,364,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,364,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2014</a></td>
+                        <td>February</td>
+                        <td class="odd gradeA">7,320,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2014</a></td>
+                        <td>March</td>
+                        <td class="odd gradeA">5,322,422.67</td>
+                        <td class="center">5,564,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,564,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,564,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,564,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2014</a></td>
+                        <td>March</td>
+                        <td class="odd gradeX">6,120,422.67</td>
+                        <td class="center">5,664,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,664,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,664,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,664,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2014</a></td>
+                        <td>March</td>
+                        <td class="even gradeC">8,330,422.67</td>
+                        <td class="center">7,764,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">7,764,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">7,764,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">7,764,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2014</a></td>
+                        <td>January</td>
+                        <td class="odd gradeA">7,320,822.67</td>
+                        <td class="center">5,964,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,964,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,964,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,964,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2014</a></td>
+                        <td>January</td>
+                        <td class="odd gradeX">5,320,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                        <td>January</td>
+                        <td class="even gradeC">3,320,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                        <td>January</td>
+                        <td class="odd gradeA">1,320,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                        <td>February</td>
+                        <td class="odd gradeX">7,320,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                        <td class="even gradeA">February</td>
+                        <td class="even gradeC">8,320,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                        <td>February</td>
+                        <td class="odd gradeA">5,320,402.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                        <td>February</td>
+                        <td class="odd gradeX">6,310,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                        <td>February</td>
+                        <td class="even gradeC">8,320,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>March</td>
+                        <td class="odd gradeA">7,320,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>March</td>
+                        <td class="odd gradeA">5,322,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>March</td>
+                      <td class="odd gradeX">6,120,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>March</td>
+                      <td class="even gradeC">8,330,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>March</td>
+                      <td class="odd gradeA">7,320,822.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>March</td>
+                      <td class="odd gradeX">5,320,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>March</td>
+                      <td class="even gradeC">5,320,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>March</td>
+                      <td class="odd gradeA">3,320,422.61</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>June</td>
+                        <td class="odd gradeX">5,120,4432.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>June</td>
+                        <td class="even gradeC">2,310,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>June</td>
+                      <td class="odd gradeA">5,320,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>June</td>
+                      <td class="odd gradeX">6,320,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>June</td>
+                      <td class="even gradeC">8,320,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>June</td>
+                      <td class="odd gradeA">7,320,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>June</td>
+                      <td class="odd gradeA">5,322,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>June</td>
+                      <td class="odd gradeX">6,120,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>July</td>
+                        <td class="even gradeC">8,330,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>July</td>
+                        <td class="odd gradeA">7,320,822.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>July</td>
+                        <td class="odd gradeX">5,320,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>July</td>
+                        <td class="even gradeC">5,320,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>August</td>
+                        <td class="odd gradeA">5,320,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>August</td>
+                        <td class="odd gradeX">5,320,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeC">
+                      <td class="gradeA"><a href="commission-details.html">2015</a></td>
+                      <td class="gradeA">August</td>
+                      <td class="even gradeC">5,320,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>August</td>
+                      <td class="odd gradeA">5,320,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td>August</td>
+                      <td class="odd gradeX">6,320,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeX">
+                      <td class="gradeA"><a href="commission-details.html">2015</a></td>
+                      <td class="gradeA">August</td>
+                      <td class="even gradeC">8,320,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeC">
+                      <td class="gradeA"><a href="commission-details.html">2015</a></td>
+                      <td>September</td>
+                        <td class="odd gradeA">7,320,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeC">
+                      <td class="gradeA"><a href="commission-details.html">2015</a></td>
+                      <td>September</td>
+                        <td class="odd gradeA">5,322,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td class="gradeC">September</td>
+                      <td class="odd gradeX">6,120,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeA">
+                      <td><a href="commission-details.html">2015</a></td>
+                      <td class="gradeC">September</td>
+                      <td class="even gradeC">8,330,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeX">
+                      <td class="gradeA"><a href="commission-details.html">2015</a></td>
+                      <td class="gradeC">September</td>
+                      <td class="odd gradeA">7,320,822.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeX">
+                      <td class="gradeA"><a href="commission-details.html">2015</a></td>
+                      <td class="gradeC">September</td>
+                      <td class="odd gradeA">5,320,422.67</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">10,784,911.77</td>
+                      <td class="center">5,464,489.10 </td>
+                      <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeX">
+                      <td class="gradeA"><a href="commission-details.html">2015</a></td>
+                      <td>October</td>
+                        <td class="odd gradeX">6,320,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeC">
+                      <td class="gradeA"><a href="commission-details.html">2015</a></td>
+                      <td>October</td>
+                        <td class="even gradeC">8,320,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeC">
+                      <td class="gradeA"><a href="commission-details.html">2015</a></td>
+                      <td>November</td>
+                        <td class="even gradeC">8,330,422.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                    <tr class="gradeU">
+                      <td class="gradeA"><a href="commission-details.html">2015</a></td>
+                      <td>December</td>
+                        <td class="odd gradeA">7,320,822.67</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">10,784,911.77</td>
+                        <td class="center">5,464,489.10 </td>
+                        <td class="center">10,784,911.77</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        
+    </div>
+    <div id="bg">
+		<img src="img/template_background.jpg" alt="">
+	</div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+	<script src="js/dataTables.bootstrap.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
